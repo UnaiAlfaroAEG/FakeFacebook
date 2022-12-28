@@ -26,6 +26,7 @@ padding: 0 11px;
 align-items:center;
 flex-direction:row;
 justify-content:space-between;
+background-color:white
 `;
 
 const Text = styled.Text`
