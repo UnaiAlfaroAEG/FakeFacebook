@@ -7,7 +7,6 @@ module.exports = [
     {source:require('../assets/8.jpg'),online:Math.random()>= 0.5},
     {source:require('../assets/39.jpg'),online:Math.random()>= 0.5},
     {source:require('../assets/28.jpg'),online:Math.random()>= 0.5}
-
 ]
     
 

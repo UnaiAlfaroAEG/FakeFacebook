@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import ToolBar from "../components/ToolBar";
 import MainSeparator from "../components/MainSeparator";
 import Users from "../components/Users";
-
+import Story from "../components/Story";
 
 const Home = () =>{
     return(
@@ -18,7 +18,8 @@ const Home = () =>{
           <MainSeparator></MainSeparator>
           <Users></Users>
           <MainSeparator></MainSeparator>
-
+          <Story/>
+          <MainSeparator/>
         </ScrollView>
       </>
     )
