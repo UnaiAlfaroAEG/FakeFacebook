@@ -14,10 +14,24 @@ const ProfileImage = styled.Image`
     border-radius:20px;
 `;
 
-const Avatar = ({source}) =>{
+const UserActive = styled.View`
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background: #10D24B;
+    border: 2px solid #FFFFFF;
+`;
+
+
+
+const Avatar = ({source,online}) =>{
     return(
         <Container>
-            <ProfileImage source={require('../assets/12.jpg')} />
+            <ProfileImage source={source} />
+            {online && <UserActive/>}
         </Container>
     )
 }

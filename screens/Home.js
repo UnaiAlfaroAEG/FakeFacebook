@@ -4,6 +4,7 @@ import { StyleSheet, Text, View,StatusBar,ScrollView } from 'react-native';
 import Header from "../components/Header";
 import ToolBar from "../components/ToolBar";
 import MainSeparator from "../components/MainSeparator";
+import Users from "../components/Users";
 
 
 const Home = () =>{
@@ -15,6 +16,9 @@ const Home = () =>{
           <Header></Header>
           <ToolBar></ToolBar>
           <MainSeparator></MainSeparator>
+          <Users></Users>
+          <MainSeparator></MainSeparator>
+
         </ScrollView>
       </>
     )
