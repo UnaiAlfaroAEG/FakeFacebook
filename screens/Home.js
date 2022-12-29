@@ -6,6 +6,7 @@ import ToolBar from "../components/ToolBar";
 import MainSeparator from "../components/MainSeparator";
 import Users from "../components/Users";
 import Story from "../components/Story";
+import Post from "../components/Post";
 
 const Home = () =>{
     return(
@@ -13,13 +14,14 @@ const Home = () =>{
         <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content">
         </StatusBar>
         <ScrollView>
-          <Header></Header>
-          <ToolBar></ToolBar>
-          <MainSeparator></MainSeparator>
+          <Header/>
+          <ToolBar/>
+          <MainSeparator/>
           <Users></Users>
-          <MainSeparator></MainSeparator>
+          <MainSeparator/>
           <Story/>
           <MainSeparator/>
+          <Post/>
         </ScrollView>
       </>
     )
