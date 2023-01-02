@@ -40,7 +40,7 @@ const Notifications = () =>{
                 <TouchableOpacity key={item.id} style={{ ...styles.containerNotification, backgroundColor: item.isSeen ? '#fff' : '#edf2fa' }}>
                     <ImageBackground imageStyle={{borderRadius: 64}} style={styles.avatar} source={item.image}>
                         <View style={{...styles.notificationIcon, backgroundColor:"#3578e5"}}>
-                            <MaterialCommunityIcons style={{zIndex:1, color:"white"}} name="message-text-outline" size={12} color='#747476'/>
+                            <MaterialCommunityIcons style={{zIndex:1, color:"white"}} name="message-text-outline" size={18} color='#747476'/>
                         </View>
                     </ImageBackground>
                    <View style={styles.contentWrapper}>
@@ -84,8 +84,8 @@ const Notifications = () =>{
             {fakeBeforeThat.map((item)=>{return(
                 <TouchableOpacity key={item.id} style={{ ...styles.containerNotification, backgroundColor: item.isSeen ? '#fff' : '#edf2fa' }}>
                     <ImageBackground imageStyle={{borderRadius: 64}} style={styles.avatar} source={{uri:item.image}}>
-                        <View style={{...styles.notificationIcon, backgroundColor:"#3578e5"}}>
-                            <MaterialCommunityIcons style={{zIndex:1, color:"white"}} name="message-text-outline" size={12} color='#747476'/>
+                        <View style={{...styles.notificationIcon, backgroundColor:item.type=="like"?"#fff0":item.type=="react" ? "#fff0":item.type=="tag"?"#00bb2d":"#3578e5"}}>
+                            <MaterialCommunityIcons style={{zIndex:1}} name= { item.type=="like" ? "heart-multiple-outline": item.type=="react" ?"emoticon-happy-outline":item.type=="story"?"image-outline":item.type=="tag"?"message-reply-outline":"message-text-outline"} size={18} color={item.type=="like"?'#f25656':item.type=="react"? "#d4f534":item.type=="story"?"white":item.type=="tag"?"white":'#747476'}/>
                         </View>
                     </ImageBackground>
                    <View style={styles.contentWrapper}>
